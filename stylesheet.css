@@ -99,7 +99,7 @@ body::before {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .right-side {
@@ -110,18 +110,18 @@ body::before {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .middle-layer {
     position: absolute;
-    top: -10%;
-    left: -20%;
-    width: 260px;
-    height: 120%;
+    top: 0;
+    left: 5%; /* Ubah dari -20% ke 50% */
+    transform: translateX(-50%) skewX(-5deg); /* Tambah translateX */
+    width: 200px; /* Perkecil width */
+    height: 200vh;
     background: #565757;
-    transform: skewX(-10deg);
-    z-index: 1;
+    z-index: 1; /* Tetap di belakang */
 }
 
 .left-side h1 {
@@ -129,7 +129,7 @@ body::before {
     color: #fff4f4;
     margin-bottom: 30px;
     position: relative;
-    z-index: 2;
+    z-index: 10;
     line-height: 1.2;
 }
 
@@ -138,7 +138,7 @@ body::before {
     color: #fefefe;
     margin-bottom: 25px;
     position: relative;
-    z-index: 2;
+    z-index: 10;
     opacity: 0.9;
 }
 
@@ -219,6 +219,7 @@ body::before {
     font-size: 28px;
     margin-bottom: 20px;
     color: #fff;
+    z-index: 2;
 }
 
 .about-card p {
@@ -249,6 +250,7 @@ body::before {
     border: 1px solid rgba(255,255,255,0.2);
     transition: all 0.35s ease;
     cursor: pointer;
+    z-index: 2;
 }
 
 .skill-item:hover {
@@ -263,6 +265,7 @@ body::before {
     margin-bottom: 12px;
     transition: all 0.35s ease;
     display: block;
+    z-index: 2;
 }
 
 .skill-item:hover i {
