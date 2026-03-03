@@ -116,12 +116,12 @@ body::before {
 .middle-layer {
     position: absolute;
     top: 0;
-    left: 5%; /* Ubah dari -20% ke 50% */
-    transform: translateX(-50%) skewX(-5deg); /* Tambah translateX */
-    width: 200px; /* Perkecil width */
+    left: 5%; 
+    transform: translateX(-50%) skewX(-5deg);
+    width: 200px; 
     height: 200vh;
     background: #565757;
-    z-index: 1; /* Tetap di belakang */
+    z-index: 1; 
 }
 
 .left-side h1 {
